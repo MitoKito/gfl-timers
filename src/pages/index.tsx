@@ -1,5 +1,5 @@
 import * as React from "react";
-import MainLayout from "../layouts/Main";
+import MainLayout from "layouts/main";
 import { Title, MaxWidth, Button, Card } from 'components';
 import styled from 'styled-components';
 import { useEffect, useState } from "react";
