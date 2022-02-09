@@ -48,8 +48,6 @@ export const GlobalTypography = createGlobalStyle(({ theme }: { theme: ThemeType
   }
 
   a {
-    background: ${theme.colors.purple_text_1};
-    color: ${theme.colors.mito_purple_1};
     cursor: pointer;
     display: inline-block;
     font-weight: 700;
@@ -60,7 +58,6 @@ export const GlobalTypography = createGlobalStyle(({ theme }: { theme: ThemeType
     z-index: 1;
 
     &::before {
-      background: ${theme.colors.mito_purple_1};
       bottom: -2px;
       content: "";
       height: 2px;
@@ -72,7 +69,6 @@ export const GlobalTypography = createGlobalStyle(({ theme }: { theme: ThemeType
     }
 
     &:hover {
-      color: ${theme.colors.purple_text_1};
     }
 
     &:focus::before,
@@ -82,7 +78,6 @@ export const GlobalTypography = createGlobalStyle(({ theme }: { theme: ThemeType
 
     &:focus {
       outline: none;
-      box-shadow: 0 0 0 2px ${theme.colors.mito_purple_1};
       border-radius: 4px;
     }
   }

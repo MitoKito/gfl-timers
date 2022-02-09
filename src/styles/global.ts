@@ -31,8 +31,6 @@ export const GlobalStyle = createGlobalStyle(({ theme }: { theme: ThemeType }) =
   }
 
   ::selection {
-    /* background-color: ${theme.colors.mito_purple_2};
-    color: ${theme.colors.purple_text_1}; */
     text-shadow: none;
   }
 
