@@ -3,6 +3,7 @@ import * as S from './styles';
 import Battery from 'assets/icons/battery.svg';
 import m16 from 'assets/images/m16_chibi.png';
 import { isWithinInterval, toDate } from 'date-fns';
+import Image from 'next/image';
 
 interface CardStatusProps {
   time: {
@@ -23,12 +24,12 @@ const CardStatus: React.FC<CardStatusProps> = ({ time, date }) => {
       {timeInRange
       ?
         <>
-          <Battery />
+          <Image src={Battery}/>
           <S.Title>Battery are ready to be collected</S.Title>
         </>
       :
         <>
-          <img src={ m16 } alt="M16 chibi sleeping"/>
+          <Image src={ m16 } alt="M16 chibi sleeping"/>
           <S.Title>Battery recharging...</S.Title>
         </>
       }

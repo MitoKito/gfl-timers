@@ -2,7 +2,7 @@ import { createGlobalStyle, css } from 'styled-components';
 import { Breakpoints } from './breakpoint';
 import { ThemeType } from './theme';
 
-import 'assets/fonts/Jost/fontface.css';
+import 'assets/fonts/Jost/fontface.module.css';
 
 
 const fallbackFontFamily = '"-apple-system", "BlinkMacSystemFont", "Segoe UI", "Helvetica Neue", "Helvetica", sans-serif';

@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styled, { ThemeProvider } from 'styled-components';
-import { GlobalStyle } from 'styles/global';
-import { GlobalTypography } from 'styles/typography';
-import { theme } from 'styles/theme';
+import styled from 'styled-components';
 
 const Main = styled.main`
   flex-grow: 1;
@@ -15,13 +12,9 @@ interface MainProps {
 
 const MainLayout: React.FC<MainProps> = ({ children }) => {
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
-      <GlobalTypography />
-      <Main role="main" id="#Skip">
-        {children}
-      </Main>
-    </ThemeProvider>
+    <Main role="main" id="#Skip">
+      {children}
+    </Main>
   );
 };
 
